@@ -82,8 +82,8 @@ class CustomFooter extends HTMLElement {
             <footer>
                 <div class="footer-content">
                     <div class="footer-logo">
-                        <img src="oficina-interior.png" alt="MotoMasters Garage">
-                        <span>MotoMasters Garage</span>
+                        <img src="logo-praxedes.png" alt="Praxedes Moto Peças">
+                        <span>Praxedes Moto Peças</span>
                     </div>
                     <div class="footer-links">
                         <a href="#servicos">Serviços</a>
