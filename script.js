@@ -21,7 +21,7 @@ document.getElementById('agendamentoForm').addEventListener('submit', function(e
     const numeroWhatsApp = "5584999999999"; // número da oficina
 
     const mensagem =
-        `Olá! Vim pelo site da MotoMasters Garage.%0A%0A` +
+        `Olá! Vim pelo site da Paxedes Moto Peças.%0A%0A` +
         `👤 Nome: ${nome}%0A` +
         `🏍️ Veículo: ${veiculo}%0A` +
         `🛠️ Serviço: ${servico}`;
