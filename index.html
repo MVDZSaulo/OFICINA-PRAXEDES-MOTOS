@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praxedes Moto Peças</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/whatsapp-button.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <custom-navbar></custom-navbar>
+
+    <header class="relative h-screen flex flex-col justify-center items-center text-center bg-[url('oficina-nome.png')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Praxedes Moto Peças</h1>
+            <p class="text-xl md:text-2xl text-white mb-8">Excelência em manutenção automotiva</p>
+            <a href="#agendamento" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Agende seu serviço</a>
+        </div>
+    </header>
+
+    <section id="servicos" class="py-20 px-4 reveal">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i data-feather="droplet" class="text-red-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2 text-gray-800">Troca de Óleo</h3>
+                        <p class="text-gray-600 text-center">Lubrificação completa do motor com óleos premium.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i data-feather="alert-octagon" class="text-red-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2 text-gray-800">Freios</h3>
+                        <p class="text-gray-600 text-center">Pastilhas, discos e revisão completa do sistema.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i data-feather="wind" class="text-red-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2 text-gray-800">Suspensão</h3>
+                        <p class="text-gray-600 text-center">Conforto e segurança na direção.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+                    <div class="p-6">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                            <i data-feather="cpu" class="text-red-600 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2 text-gray-800">Injeção Eletrônica</h3>
+                        <p class="text-gray-600 text-center">Diagnóstico computadorizado preciso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-20 px-4 bg-gray-50 reveal">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Nossa Oficina</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <img src="oficina-frente.png" alt="Oficina" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <img src="oficina-interior.png" alt="Oficina" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg">
+                    <img src="oficina-exterior.png" alt="Oficina" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="py-20 px-4 reveal">
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Agendamento</h2>
+            <form id="agendamentoForm" class="space-y-6">
+                <div>
+                    <label for="nome" class="block text-gray-700 mb-2">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome completo" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div>
+                    <label for="veiculo" class="block text-gray-700 mb-2">Veículo</label>
+                    <input type="text" id="veiculo" placeholder="Marca, modelo e ano" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+                <div>
+                    <label for="servico" class="block text-gray-700 mb-2">Serviço desejado</label>
+                    <textarea id="servico" placeholder="Descreva o serviço que precisa" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">Agendar</button>
+            </form>
+        </div>
+    </section>
+
+    <custom-whatsapp-button></custom-whatsapp-button>
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
