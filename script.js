@@ -28,7 +28,6 @@ document.getElementById('agendamentoForm').addEventListener('submit', function(e
 
     const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
     window.open(url, "_blank");
-
 });
 class CustomFooter extends HTMLElement {
     connectedCallback() {
