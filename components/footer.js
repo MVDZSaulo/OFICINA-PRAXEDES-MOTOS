@@ -98,7 +98,7 @@ class CustomFooter extends HTMLElement {
                         <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
                         <a href="#" aria-label="YouTube"><i data-feather="youtube"></i></a>
                     </div>
-                    <p class="copyright">© ${new Date().getFullYear()} MotoMasters Garage. Todos os direitos reservados.</p>
+                    <p class="copyright">© ${new Date().getFullYear()} Praxedes Moto Peças. Todos os direitos reservados.</p>
                 </div>
             </footer>
         `;
