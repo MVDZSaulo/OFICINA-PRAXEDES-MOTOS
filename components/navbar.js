@@ -87,7 +87,7 @@ class CustomNavbar extends HTMLElement {
                 <div class="navbar-container">
                     <div class="logo">
                         <img src="logo-praxedes.png" alt="Praxedes Moto Meças">
-                        <span>Praxedes Moto peças</span>
+                        
                     </div>
                     <div class="menu">
                         <a href="#servicos">Serviços</a>
