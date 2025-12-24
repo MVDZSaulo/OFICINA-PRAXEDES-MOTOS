@@ -18,7 +18,7 @@ document.getElementById('agendamentoForm').addEventListener('submit', function(e
     const veiculo = document.getElementById("veiculo").value;
     const servico = document.getElementById("servico").value;
 
-    const numeroWhatsApp = "5584999999999"; // número da oficina
+    const numeroWhatsApp = "5584998228590"; // número da oficina
 
     const mensagem =
         `Olá! Vim pelo site da Paxedes Moto Peças.%0A%0A` +
